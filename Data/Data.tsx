@@ -3,30 +3,30 @@ import { NavLink } from "@/Types"
 export const navLinks: NavLink[] = [
     {
         path: "/",
-        label: "Home"
+        label: "Início"
     },
     {
         path: "/about",
-        label: "About",
+        label: "Sobre"
     },
     {
         path: "/cars",
-        label: "Cars"
+        label: "Carros"
     },
     {
         path: "/services",
-        label: "Services"
+        label: "Serviços"
     },
     {
         path: "/skilllevel",
-        label: "Skill Level"
+        label: "Experiência"
     },
     {
         path: "/gallery",
-        label: "Gallery"
+        label: "Galeria"
     },
     {
         path: "/contact",
-        label: "Contact"
+        label: "Contato"
     }
 ]
