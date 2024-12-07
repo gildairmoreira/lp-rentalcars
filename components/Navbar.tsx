@@ -4,14 +4,17 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import React, { useState } from 'react'
 import { HiOutlineMenuAlt4, HiX } from 'react-icons/hi'
+import { IoLogoGooglePlaystore, IoLogoSkype, IoMailOpen } from 'react-icons/io5'
 
 const Navbar = () => {
     const [showMenu, setShowMenu] = useState<boolean>(false)
     const pathname = usePathname()
 
+    const socialIcons = "text-3xl px-2 bg-black text-White rounded-full cursor-pointer"
+
     const menuVariants = {
         hidden: {
-            scale:0
+            scale: 0
         },
         visible: {
             scale: 40,
@@ -24,8 +27,8 @@ const Navbar = () => {
 
     const navLinkVariants = {
         hidden: {
-            display:'none',
-            opacity:0
+            display: 'none',
+            opacity: 0
         },
         visible: {
             opacity: 1,
@@ -75,9 +78,9 @@ const Navbar = () => {
             </motion.div>
 
             <motion.nav
-            variants={navLinkVariants}
-            animate={showMenu ? 'visible' : 'hidden'} 
-            className='h-screen md:hidden flex flex-col justify-center'>
+                variants={navLinkVariants}
+                animate={showMenu ? 'visible' : 'hidden'}
+                className='h-screen md:hidden flex flex-col justify-center'>
                 {
                     navLinks.map(link => (
                         <Link
@@ -89,6 +92,25 @@ const Navbar = () => {
                         </Link>
                     ))
                 }
+                <div className='mt-6 flex justify-center items-center flex-row gap-4'>
+                    <Link
+                        href={"https://googleplay.com"}
+                        target={'_blank'}>
+                        <IoLogoGooglePlaystore className={socialIcons} />
+                    </Link>
+                    <Link
+                        href={"https://googleplay.com"}
+                        target={'_blank'}>
+                        <IoLogoSkype className={socialIcons} />
+                    </Link>
+                    <Link
+                        href={"https://googleplay.com"}
+                        target={'_blank'}>
+                        <IoMailOpen className={socialIcons} />
+                    </Link>
+                </div>
+
+
                 <HiX
                     className='absolute top-11 right-5 w-6 h-6 text-Black cursor-pointer'
                     onClick={(prev) => setShowMenu(!prev)}
