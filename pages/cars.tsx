@@ -28,7 +28,7 @@ const cars = () => {
               -Carros Exclusivos
             </div>
             <div className='font-semibold text-3xl mt-8 text-Black'>
-              Luxury Limousine For Maximum Satisfaction. Enjoy.
+              Limusine de Luxo para Satisfação Máxima. Aproveite.
             </div>
             <p className='text-Black text-sm mt-8 leading-7 max-w-3xl'>
               O que oferecemos é o transporte de luxo e uma experiência confortável

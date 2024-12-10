@@ -16,8 +16,8 @@ type CountUpProps = {
 
 type countUpItemsProps = {
     id: number;
-    number:number;
-    text:string
+    number: number;
+    text: string
 }
 
 type ProjectProps = {
@@ -28,4 +28,45 @@ type ProjectProps = {
     detail: string[];
 }
 
-export type { WrapperProps,NavLink,CountUpProps,countUpItemsProps,ProjectProps };
+type ServiceProps = {
+    id: number;
+    title: string;
+    description: string;
+    icon: React.ReactNode;
+}
+
+type Skill = {
+    name: string;
+    level: number;
+}
+
+type SkillBarProps = {
+    skills: Skill[];
+}
+
+type GalleryProps = {
+    id: number;
+    name: string;
+    desc: string;
+    image: string;
+    link: string
+}
+
+type ContactsProps = {
+    id: number;
+    title: string;
+    text: string;
+}
+
+export type {
+    WrapperProps,
+    NavLink,
+    CountUpProps,
+    countUpItemsProps,
+    ProjectProps,
+    ServiceProps,
+    SkillBarProps,
+    Skill,
+    GalleryProps,
+    ContactsProps
+};
