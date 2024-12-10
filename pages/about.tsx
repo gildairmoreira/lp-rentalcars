@@ -14,7 +14,7 @@ import { motion } from 'framer-motion';
 import { smoothIn } from '@/animate';
 
 
-const about = () => {
+const About = () => {
 
   const { ref, inView } = useInView({
     triggerOnce: true,
@@ -89,4 +89,4 @@ const about = () => {
   )
 }
 
-export default about
+export default About

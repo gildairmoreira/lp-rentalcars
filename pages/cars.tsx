@@ -8,7 +8,7 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { smoothIn } from '@/animate'
 
-const cars = () => {
+const Cars = () => {
 
   return (
     <>
@@ -49,7 +49,13 @@ const cars = () => {
                 return (
                   <div key={project.id} className='bg-Blur p-10'>
                     <div className='w-full relative group'>
-                      <img src={project.img} alt="Card" className='w-full h-full' />
+                      <Image 
+                        src={project.img} 
+                        alt="Card" 
+                        width={500}
+                        height={300}
+                        className='w-full h-full object-cover'
+                      />
                     </div>
 
                     <div className='font-semibold text-Black text-start text-2xl mt-8'>
@@ -88,4 +94,4 @@ const cars = () => {
   )
 }
 
-export default cars
+export default Cars

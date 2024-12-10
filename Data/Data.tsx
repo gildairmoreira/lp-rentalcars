@@ -1,4 +1,4 @@
-import { ContactsProps, countUpItemsProps, GalleryProps, NavLink, ProjectProps, ServiceProps, Skill, SkillProps } from "@/Types";
+import { ContactsProps, countUpItemsProps, GalleryProps, NavLink, ProjectProps, ServiceProps, Skill } from "@/Types";
 import { BsAirplaneFill, BsBriefcaseFill, BsFillCarFrontFill, BsFillPinMapFill, BsFillSendCheckFill, BsFillTaxiFrontFill, BsStarFill, BsTelephoneInboundFill } from "react-icons/bs";
 
 const navLinks: NavLink[] = [
